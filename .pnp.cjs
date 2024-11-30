@@ -52,6 +52,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:19.0.0-rc.1"],\
           ["react-dom", "virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:19.0.0-rc.1"],\
+          ["react-hook-form", "virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:7.53.2"],\
           ["tailwindcss", "npm:3.4.11"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
@@ -4786,6 +4787,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.3.3"],\
           ["react", "npm:19.0.0-rc.1"],\
           ["react-dom", "virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:19.0.0-rc.1"],\
+          ["react-hook-form", "virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:7.53.2"],\
           ["tailwindcss", "npm:3.4.11"],\
           ["typescript", "patch:typescript@npm%3A5.6.2#optional!builtin<compat/typescript>::version=5.6.2&hash=8c6c40"]\
         ],\
@@ -5398,6 +5400,28 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:18.3.12"],\
           ["react", "npm:19.0.0-rc.1"],\
           ["scheduler", "npm:0.25.0-rc.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-hook-form", [\
+      ["npm:7.53.2", {\
+        "packageLocation": "../../.yarn/berry/cache/react-hook-form-npm-7.53.2-ee06f00e22-10c0.zip/node_modules/react-hook-form/",\
+        "packageDependencies": [\
+          ["react-hook-form", "npm:7.53.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:7.53.2", {\
+        "packageLocation": "./.yarn/__virtual__/react-hook-form-virtual-e4ac9ae511/3/.yarn/berry/cache/react-hook-form-npm-7.53.2-ee06f00e22-10c0.zip/node_modules/react-hook-form/",\
+        "packageDependencies": [\
+          ["react-hook-form", "virtual:cab5444db08dee65675ce4636869d5e29b1589efbcfd78976cf92ea113a052e66419e3544ef87577e9af3c86511041ae4309277b4b1c8693d83a7dc1213b88db#npm:7.53.2"],\
+          ["@types/react", "npm:18.3.12"],\
+          ["react", "npm:19.0.0-rc.1"]\
         ],\
         "packagePeers": [\
           "@types/react",\
