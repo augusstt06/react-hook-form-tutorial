@@ -1,33 +1,29 @@
 'use client'
+import { type SubmitHandler, useForm } from 'react-hook-form'
 
-import { useForm } from 'react-hook-form'
+type TInput = {
+  email: string
+  password: string
+}
 
 export default function Home() {
-  const { register, handleSubmit } = useForm()
-
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm<TInput>()
+  const onSubmit: SubmitHandler<TInput> = (data) => {
+    console.log(data)
+  }
+  console.log(watch('password'))
   return (
     <div>
-      <form
-        // eslint-disable-next-line @typescript-eslint/no-misused-promises
-        onSubmit={handleSubmit((data) => {
-          alert(JSON.stringify(data))
-        })}
-      >
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="aug@email.com"
-          {...register('email')}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          id="password"
-          type="password"
-          placeholder="Test123!"
-          {...register('paassword')}
-        />
-        <button type="submit">Login</button>
+      <form onSubmit={() => handleSubmit(onSubmit)}>
+        <input type="text" {...register('email')} />
+        <input type="password" {...register('password', { required: true })} />
+        {errors.password != null && <span>Password field is required</span>}
+        <input type="submit" />
       </form>
     </div>
   )
